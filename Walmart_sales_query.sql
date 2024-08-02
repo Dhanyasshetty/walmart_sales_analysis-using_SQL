@@ -66,7 +66,7 @@ GROUP BY product_line
 ORDER BY total_revenue DESC;
 
 -- City with the largest revenue?
-SELECT TOP 1 city, SUM(total) AS total_revenue
+SELECT TOP 5 city, SUM(total) AS total_revenue
 FROM [Walmart Sales Data]
 GROUP BY city 
 ORDER BY total_revenue;
@@ -76,12 +76,6 @@ SELECT product_line, SUM(total) as total_revenue
 FROM [Walmart Sales Data]
 GROUP BY product_line
 ORDER BY total_revenue DESC;
-
--- City with the largest revenue?
-SELECT city, SUM(total) AS total_revenue
-FROM [Walmart Sales Data]
-GROUP BY city 
-ORDER BY total_revenue;
 
 
 -- Which product line had the largest VAT?
